@@ -1,3 +1,5 @@
+/* WDD 130 Clean styles.css for Rafting Home Page Layout */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 
 #content {
@@ -19,10 +21,19 @@ h2 {
 
 header {
     background-color: rgba(20, 30, 13, 0.7);
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -37,33 +48,48 @@ nav a:hover {
     color: #d9c2a3;
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    max-width: none;
+    width: 100%;
+}
+
+#hero-image {
+    display: block;
+    width: 100%;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
 #hero-msg h1,
 #hero-msg h4 {
     text-align: center;
-}
-
-#hero-msg h1 {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
 }
 
 #hero-msg h4 {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    color: white;
+}
+
+#hero-msg h1 {
+    font-size: 2em;
+    color: #2c6e49;
 }
 
 .button-box {
     text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-.home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-    color: #2c6e49;
-    margin-top: 10px;
 }
 
 .book,
@@ -80,35 +106,57 @@ main section {
 .book:hover,
 .join:hover {
     background-color: #1b4f34;
-    color: white;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img,
+.mountains {
+    width: 100%;
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
 }
 
 #background {
-    height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/9;
     background-color: #d0e9f2;
+    height: 725px;
 }
 
-.rivers-card,
-.camping-card,
-.rapids-card {
-    margin: 200px 0;
-}
-
-.card-img {
-    border: 10px solid #2c6e49;
-}
-
-main section img {
-    box-sizing: border-box;
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+    text-align: center;
+    line-height: 1.5em;
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.5em;
 }
 
 .msg h2 {
@@ -131,20 +179,31 @@ main section img {
     padding-top: 10px;
 }
 
-#hero-image {
+#hero-img {
     width: 100%;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #2e2e2e;
     color: white;
     padding: 25px 50px;
-    text-align: center;
     margin-top: 200px;
-}
-
-footer p {
-    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 footer a {
@@ -159,4 +218,46 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero, #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
