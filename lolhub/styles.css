@@ -1,0 +1,189 @@
+/* LoLHub WDD 130 Site Plan Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap');
+
+:root {
+  /* LoLHub Blue Logo Color Palette */
+  --primary-color: #3B82F6;           /* Royal Blue: speech bubble, primary brand color */
+  --secondary-color: #60A5FA;         /* Light Sky Blue: accents, highlights */
+  --accent1-color: #FACC15;           /* Gold: crown, hover, call-to-action */
+  --accent2-color: #FFFFFF;           /* White: background */
+
+  /* Fonts */
+  --heading-font: "Raleway", sans-serif;
+  --paragraph-font: "Open Sans", Helvetica, sans-serif;
+
+  /* Derived colors for consistent theming */
+  --headline-color-on-white: #1F2937;  /* Charcoal for text on light backgrounds */
+  --headline-color-on-color: #FFFFFF;  /* White for text on dark/colored backgrounds */
+  --paragraph-color-on-white: #1F2937; /* Charcoal for body text on light backgrounds */
+  --paragraph-color-on-color: #FFFFFF; /* White for body text on dark backgrounds */
+  --paragraph-background-color: #3B82F6; /* Royal Blue for section backgrounds */
+  --nav-link-color: #FFFFFF;          /* White text in nav */
+  --nav-background-color: #3B82F6;    /* Royal Blue nav bar */
+  --nav-hover-link-color: #FACC15;    /* Gold hover text */
+  --nav-hover-background-color: #60A5FA; /* Light Sky Blue on hover */
+}
+
+/* Core Layout */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+/* Header */
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+/* Paragraphs */
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+/* Color Palette Display Boxes */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: var(--nav-link-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Sitemap Grid */
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+
+.sitemap > div {
+  text-align: center;
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
