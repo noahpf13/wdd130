@@ -3,26 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap');
 
 :root {
-  /* LoLHub Blue Logo Color Palette */
-  --primary-color: #3B82F6;           /* Royal Blue: speech bubble, primary brand color */
-  --secondary-color: #60A5FA;         /* Light Sky Blue: accents, highlights */
-  --accent1-color: #FACC15;           /* Gold: crown, hover, call-to-action */
-  --accent2-color: #FFFFFF;           /* White: background */
+  /* LoLHub Refined Color Palette */
+  --primary-color: #2596be;           /* Highlight Blue */
+  --secondary-color: #ced4da;         /* Soft Slate */
+  --accent1-color: #58c4dc;           /* Sky Blue Accent for Hover */
+  --accent2-color: #ffffff;           /* White Background */
 
   /* Fonts */
   --heading-font: "Raleway", sans-serif;
   --paragraph-font: "Open Sans", Helvetica, sans-serif;
 
   /* Derived colors for consistent theming */
-  --headline-color-on-white: #1F2937;  /* Charcoal for text on light backgrounds */
-  --headline-color-on-color: #FFFFFF;  /* White for text on dark/colored backgrounds */
-  --paragraph-color-on-white: #1F2937; /* Charcoal for body text on light backgrounds */
-  --paragraph-color-on-color: #FFFFFF; /* White for body text on dark backgrounds */
-  --paragraph-background-color: #3B82F6; /* Royal Blue for section backgrounds */
-  --nav-link-color: #FFFFFF;          /* White text in nav */
-  --nav-background-color: #3B82F6;    /* Royal Blue nav bar */
-  --nav-hover-link-color: #FACC15;    /* Gold hover text */
-  --nav-hover-background-color: #60A5FA; /* Light Sky Blue on hover */
+  --headline-color-on-white: #1f1f1f;  /* Charcoal text on light backgrounds */
+  --headline-color-on-color: #ffffff;  /* White text on dark backgrounds */
+  --paragraph-color-on-white: #1f1f1f; /* Charcoal body text on light backgrounds */
+  --paragraph-color-on-color: #ffffff; /* White body text on dark backgrounds */
+  --paragraph-background-color: #0c1b24; /* Deep Navy section backgrounds */
+  --nav-link-color: #ffffff;          /* White nav text */
+  --nav-background-color: #0c1b24;    /* Deep Navy nav background */
+  --nav-hover-link-color: #0c1b24;    /* Deep Navy text on hover */
+  --nav-hover-background-color: #58c4dc; /* Sky Blue hover background */
 }
 
 /* Core Layout */
