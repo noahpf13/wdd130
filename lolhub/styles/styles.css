@@ -1,0 +1,107 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Header & Navigation ========== */
+header {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Main Layout ========== */
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2.5em;
+}
+
+/* ========== Image Sections ========== */
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.resources-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+footer a {
+  color: #99e2ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .image-row,
+  .resources-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+  }
+}
