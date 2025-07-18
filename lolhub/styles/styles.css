@@ -115,29 +115,25 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* ========== Intro Section ========== */
+/* ========== Grid-Based Sections ========== */
 .intro-section {
-  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2em;
+  padding: 5em 5vw;
   background-color: #152833;
   color: #f0f0f0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5em 5vw;
-  gap: 2em;
-  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
 .intro-text-block {
-  flex: 1 1 50%;
   text-align: left;
 }
 
 .intro-text-block h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: 'Raleway', sans-serif;
 }
 
 .intro-text-block p {
@@ -147,13 +143,50 @@ nav a:hover {
 }
 
 .intro-image-block {
-  flex: 1 1 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .intro-image-block img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.climb-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2em;
+  padding: 5em 5vw;
+  background-color: #1a2c36;
+  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.climb-text-block {
+  text-align: right;
+}
+
+.climb-text-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.climb-text-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.climb-image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.climb-image-block img {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -166,57 +199,154 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.climb-preview {
-  width: 100vw;
-  background-color: #1a2c36;
-  color: #f0f0f0;
-  display: flex;
-  justify-content: space-between;
+/* ========== The Climb Page ========== */
+.rank-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 5em 5vw;
   gap: 2em;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  padding: 5em 8vw;
 }
 
-.climb-text-block {
-  flex: 1 1 50%;
-  text-align: right;
+.rank-text {
+  text-align: center;
 }
 
-.climb-text-block h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: 'Raleway', sans-serif;
+.rank-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+  font-weight: normal;
 }
 
-.climb-text-block p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+.rank-text h1 {
+  font-size: 6.5rem;
+  margin: 0.1em 0;
+  font-style: italic;
 }
 
-.climb-image-block {
-  flex: 1 1 40%;
+.rank-text img.rank-logo {
+  max-width: 140px;
+  margin: 0.2em auto 0;
+  display: block;
+}
+
+.rank-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.climb-image-block img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+.rank-image-border {
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  border: 1px solid #99e2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
+.rank-image-border img {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rank-info {
+  padding: 4em 10vw;
+  background-color: #1a2c36;
+  text-align: center;
+}
+
+.rank-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rank-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+}
+
+.rank-info .tier-list {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #99e2ff;
+}
+
+/* ========== ChatReadThis Page ========== */
+.page-header {
+  text-align: center;
+  padding: 4em 2em 2em;
+  background-color: #152833;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.highlight-quote {
+  background-color: #1a2c36;
+  padding: 2em;
+  margin: 2em auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 6px solid #00bfff;
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+.tip-box {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2em;
+  background-color: #0c1b24;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.tip-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.tip-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: #99e2ff;
+}
+
+.tip-text ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
 
 /* ========== Feature Links Section ========== */
-
 .section-title {
   text-align: center;
   font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
-  color: #f0f0f0;
   margin: 2em 0 1em;
 }
 
@@ -261,12 +391,11 @@ nav a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; 
+  z-index: 0;
+  transition: transform 0.3s ease;
 }
 
 .feature-card h3 {
@@ -274,11 +403,8 @@ nav a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-  pointer-events: none;
   text-align: center;
   padding: 0 0.5em;
 }
@@ -312,231 +438,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ========== Responsive Design ========== */
-@media (max-width: 768px) {
-  .image-row, .feature-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    text-align: center;
-    width: 100%;
-    margin-top: 1em;
-  }
-
-  .hero-static-text {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
-  .intro-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-text-block {
-    text-align: center;
-  }
-}
-
-/* ========== The Climb Page ========== */
-.rank-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5em 8vw;
-  flex-wrap: wrap;
-}
-
-.rank-text {
-  flex: 1 1 45%;
-  text-align: center;
-}
-
-.rank-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2em;
-  font-family: 'Raleway', sans-serif;
-  font-weight: normal;
-}
-
-.rank-text h1 {
-  font-size: 6.5rem;
-  margin: 0.1em 0;
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-}
-
-.rank-text img.rank-logo {
-  max-width: 140px;
-  margin-top: 0.2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rank-image {
-  flex: 1 1 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rank-image img {
-  width: 600px;  
-  height: 600px; 
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.rank-image {
-  flex: 1 1 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rank-image-border {
-  width: 620px;
-  height: 620px;
-  border-radius: 50%;
-  border: 1px solid #99e2ff; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; 
-  background-color: transparent;
-  box-sizing: border-box;
-}
-
-.rank-image-border img {
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-
-.rank-info {
-  padding: 4em 10vw;
-  background-color: #1a2c36;
-  color: #f0f0f0;
-  text-align: center;
-}
-
-.rank-info h2 {
-  font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 1rem;
-}
-
-.rank-info p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 1.5em auto;
-}
-
-.rank-info .tier-list {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #99e2ff;
-}
-
-/* ========== ChatReadThis Page ========== */
-.page-header {
-  text-align: center;
-  padding: 4em 2em 2em;
-  background-color: #152833;
-}
-
-.page-header h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 0.5em;
-}
-
-.page-header p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.highlight-quote {
-  background-color: #1a2c36;
-  padding: 2em;
-  margin: 2em auto;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.2rem;
-  border-left: 6px solid #00bfff;
-  border-radius: 6px;
-  max-width: 800px;
-}
-
-/* Tip Box Layout */
-.tip-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0c1b24;
-  margin: 2em auto;
-  padding: 2em;
-  border-radius: 10px;
-  gap: 2em;
-  max-width: 1000px;
-  flex-wrap: wrap;
-}
-
-.tip-image img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-}
-
-.tip-text {
-  flex: 1 1 400px;
-}
-
-.tip-text h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-  font-family: 'Raleway', sans-serif;
-  color: #99e2ff;
-}
-
-.tip-text ul {
-  list-style-type: disc;
-  padding-left: 1.2em;
-  line-height: 1.6;
-  font-size: 1.1rem;
-}
-
-/* Responsive tweaks */
-@media (max-width: 900px) {
-  .tip-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .tip-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .tip-text {
-    padding-top: 1em;
-  }
-
-  .tip-text ul {
-    padding-left: 0;
-  }
-}
-
 /* ========== Overlay on Hover ========== */
 .container {
   position: relative;
@@ -564,4 +465,30 @@ footer a:hover {
 
 .container:hover .overlay {
   opacity: 1;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .intro-section,
+  .climb-preview,
+  .rank-section,
+  .tip-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .hero-static-text {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .tip-text ul {
+    padding-left: 0;
+  }
 }
