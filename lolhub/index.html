@@ -5,35 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LoLHub - Home</title>
   <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="LoLHub Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="theclimb.html">The Climb</a>
-      <a href="chatreadthis.html">ChatReadThis</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero-image">
-      <img src="images/summonersrift.png" alt="Summoner's Rift" />
+  <!-- Hero Intro Section -->
+  <section class="hero-intro">
+    <div class="bg-slideshow">
+      <div class="bg-slide bg1"></div>
+      <div class="bg-slide bg2"></div>
+      <div class="bg-slide bg3"></div>
+      <div class="bg-slide bg4"></div>
+    </div>
+    <div class="hero-static-text">
+      <h1>Hi, I'm Killamas!</h1>
+    </div>
+  </section>
+
+  <a href="#main" class="scroll-cue">↓</a>
+
+  <!-- Header -->
+  <div class="hero-container">
+    <header>
+      <img src="images/logo.png" alt="LoLHub Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="theclimb.html">The Climb</a>
+        <a href="chatreadthis.html">ChatReadThis</a>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+    <section class="intro-section">
+      <div class="intro-text-block">
+        <h2>I want to get better at League of Legends.</h2>
+        <p>
+          This site is how I'm going to keep track of my climb to Gold.
+          Some say League might be one of the hardest games to play currently. In my experience, I’ve never gone higher than Silver 4 on ADC.
+          Skilling up may take more than a casual effort. So I want this page to be a resource for others who want to improve using a goal-oriented strategy.
+        </p>
+      </div>
+      <div class="intro-image-block">
+        <img src="images/leagueclient.jpg" alt="League Client Screenshot" />
+      </div>
     </section>
 
-    <section class="intro-text">
-      <h1>Hi, I’m Killamas</h1>
-      <p>
-        I want to get better at League. This site is how I'm going to keep track of my climb to Gold.
-        Some say League might be one of the hardest games to play currently. In my experience, I’ve never gone higher than Silver 4 on ADC. 
-        Skilling up may take more than a casual effort. So I want this page to be a resource for others who want to improve using a goal-oriented strategy.
-      </p>
-    </section>
+    <!-- Divider Line -->
+    <div class="section-divider"></div>
 
-    <section class="image-row">
-      <img src="images/jersey.jpg" alt="LoL Jersey" />
-      <img src="images/leagueclient.jpg" alt="League Client" />
-      <img src="images/summonersrift.png" alt="Summoner's Rift" />
+    <section class="climb-preview">
+  <div class="climb-image-block">
+    <img src="images/rift.jpg" alt="Summoner's Rift Overview">
+  </div>
+  <div class="climb-text-block">
+    <h2>What Is My Goal?</h2>
+    <p>
+      Follow my progress as I set goals, review my gameplay, and track wins and losses in the climb to Gold.
+      Learn from what works and what doesn’t—updated regularly with stats and thoughts from every ranked session.
+    </p>
+  </div>
+</section>
+
+<h2 class="section-title">Links</h2>
+    <section class="feature-links">
+      <div class="feature-card">
+        <a href="theclimb.html">
+          <img src="images/rift.jpg" alt="the rift">
+          <h3>The Climb</h3>
+        </a>
+      </div>
+      <div class="feature-card">
+        <a href="chatreadthis.html">
+          <img src="images/jersey.jpg" alt="jersey">
+          <h3>ChatReadThis</h3>
+        </a>
+      </div>
+      <div class="feature-card">
+        <a href="site-plan.html">
+          <img src="images/wireframe.png" alt="website wireframe">
+          <h3>Site Plan</h3>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -42,5 +96,6 @@
     <p>&copy; 2025 LoLHub by Noah Forero</p>
     <a href="site-plan.html">Site Plan</a>
   </footer>
+
 </body>
 </html>
