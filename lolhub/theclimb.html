@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LoLHub - The Climb</title>
   <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <img src="images/logo.png" alt="LoLHub Logo" class="logo" />
     <nav>
@@ -17,32 +19,33 @@
   </header>
 
   <main>
-    <h1>The Climb</h1>
-
-    <section class="progress">
-      <ul>
-        <li>Tracking champions played and ranked performance</li>
-        <li>Logging lessons learned from games</li>
-        <li>Finding improvement patterns over time</li>
-      </ul>
-      <img src="images/opgg.png" alt="OP.GG Match Recap" />
+    <section class="climb-header">
+      <h1>The Climb</h1>
     </section>
 
-    <section class="reflections">
-      <img src="images/graph.jpg" alt="Rank Progression Graph" />
-      <ul>
-        <li>Weekly review summaries</li>
-        <li>What worked, what didn’t</li>
-        <li>Next goals</li>
-      </ul>
+    <section class="rank-section">
+      <div class="rank-text">
+        <h2>Current Rank</h2>
+        <h1>Iron II</h1>
+        <img src="images/ironlogo-nobkg.png" alt="Rank Logo" class="rank-logo">
+      </div>
+      <div class="rank-image">
+        <img src="images/xayah.jpg" alt="Champion Image">
+      </div>
     </section>
 
-    <section class="log-snippet">
+    <section class="rank-info">
+      <h2>Understanding Ranked Tiers</h2>
       <p>
-        Week of July 14–20: Played 30 ranked games. Win rate 53%. Noticed better warding leads to more teamfight wins.
-        Switching back to Jhin this week. Tilt-check: take breaks after 2 losses.
+        In League of Legends, ranked gameplay is divided into several tiers that represent a player's skill level. Each tier (except the top three) has four divisions, from IV (lowest) to I (highest).
+      </p>
+      <p class="tier-list">
+        The ranked tiers are:
+        <br>
+        <strong>Iron</strong>, <strong>Bronze</strong>, <strong>Silver</strong>, <strong>Gold</strong>, <strong>Platinum</strong>, <strong>Emerald</strong>, <strong>Diamond</strong>, <strong>Master</strong>, <strong>Grandmaster</strong>, and <strong>Challenger</strong>.
       </p>
     </section>
+
   </main>
 
   <footer>
@@ -50,5 +53,6 @@
     <p>&copy; 2025 LoLHub by Noah Forero</p>
     <a href="site-plan.html">Site Plan</a>
   </footer>
+
 </body>
 </html>
