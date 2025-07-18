@@ -388,8 +388,35 @@ footer a:hover {
   height: 600px; 
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
+
+.rank-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-image-border {
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  border: 1px solid #99e2ff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.rank-image-border img {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 
 .rank-info {
   padding: 4em 10vw;
@@ -417,3 +444,95 @@ footer a:hover {
   color: #99e2ff;
 }
 
+/* ========== ChatReadThis Page ========== */
+.page-header {
+  text-align: center;
+  padding: 4em 2em 2em;
+  background-color: #152833;
+}
+
+.page-header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.highlight-quote {
+  background-color: #1a2c36;
+  padding: 2em;
+  margin: 2em auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 6px solid #00bfff;
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+/* Tip Box Layout */
+.tip-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c1b24;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 10px;
+  gap: 2em;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.tip-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.tip-text {
+  flex: 1 1 400px;
+}
+
+.tip-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-family: 'Raleway', sans-serif;
+  color: #99e2ff;
+}
+
+.tip-text ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .tip-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tip-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tip-text {
+    padding-top: 1em;
+  }
+
+  .tip-text ul {
+    padding-left: 0;
+  }
+}
