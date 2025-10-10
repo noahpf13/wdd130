@@ -6,26 +6,26 @@ Fonts are separated by a & */
 
 :root {
     /* Palette */
-    --primary-color:   #396E94; /* deep river blue */
-    --secondary-color: #E7C24F; /* warm golden */
-    --accent1-color:   #A43312; /* rust red */
-    --accent2-color:   #AABD8C; /* sage green */
-
+    --primary-color:#065F46;   /* deep forest */
+    --secondary-color:#F3F4F6; /* light foam gray */
+    --accent1-color:#059669;   /* pine */
+    --accent2-color:#D1FAE5;   /* mint */
+    
     /* Typography */
     --heading-font: "Oswald", Arial, Helvetica, sans-serif;
     --paragraph-font: "Lato", Helvetica, Arial, sans-serif;
 
 
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #396E94;   /* headlines on white background (primary blue) */ 
-    --headline-color-on-color: #FFFFFF;   /* headlines on a colored background */ 
-    --paragraph-color-on-white: #000000;  /* body text on white (black = best readability) */ 
-    --paragraph-color-on-color: #FFFFFF;  /* body text on a colored background */ 
-    --paragraph-background-color: #396E94; /* use primary blue as example bg */
-    --nav-link-color: #FFFFFF;            /* white links on nav bar */
-    --nav-background-color: #E7C24F;      /* secondary golden background */
-    --nav-hover-link-color: #000000;      /* dark text on hover */
-    --nav-hover-background-color: #396E94; /* primary blue hover bg */
+    --headline-color-on-white:#065F46;
+    --headline-color-on-color:#FFFFFF;
+    --paragraph-color-on-white:#111111;
+    --paragraph-color-on-color:#FFFFFF;
+    --paragraph-background-color:#065F46;
+    --nav-link-color:#065F46;
+    --nav-background-color:#D1FAE5;
+    --nav-hover-link-color:#FFFFFF;
+    --nav-hover-background-color:#059669;
 
 }
 

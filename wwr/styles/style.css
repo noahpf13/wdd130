@@ -1,0 +1,56 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+}
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+  background-color: var(--secondary-color); /* light foam gray */
+}
+
+header {
+  background-color: rgba(6, 95, 70, 0.85); /* deep forest w/ transparency */
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color); /* pine green */
+}
+
+.book, .join {
+  background-color: var(--accent2-color); /* mint */
+}
+
+.book:hover, .join:hover {
+  background-color: var(--accent1-color); /* pine */
+}
+
+#background {
+  background-color: var(--primary-color); /* deep forest */
+}
+
+.msg {
+  background-color: var(--secondary-color); /* light foam gray */
+}
+
+footer {
+  background-color: var(--primary-color); /* deep forest */
+}
