@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;600;700&display=swap');
+
 :root {
     /* Palette */
     --primary-color:#065F46;   /* deep forest */
@@ -31,6 +33,7 @@ nav a {
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1,
@@ -53,6 +56,10 @@ main section {
 
 body {
     background-color: var(--secondary-color); /* light foam gray */
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -62,12 +69,18 @@ header {
 
 nav a:hover {
     background-color: var(--nav-hover-background-color); /* pine green */
+    color: var(--nav-hover-link-color);
+
 }
 
 .book, .join {
     background-color: var(--accent2-color); /* mint */
     color: var(--headline-color-on-white);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -80,11 +93,17 @@ nav a:hover {
 }
 
 .msg {
-    background-color: var(--secondary-color); /* light foam gray */
+    background-color: var(--paragraph-background-color); /* light foam gray */
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 40px;
+
 }
 
 footer {
     background-color: var(--primary-color); /* deep forest */
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -96,7 +115,7 @@ footer p {
     font-size: 1.2em;
 }
 
-footer p:hover {
+footer p a:hover {
     text-decoration: underline;
 }
 
@@ -106,6 +125,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -114,4 +134,49 @@ footer a:hover {
 
 #hero-img {
     width: 100%
+}
+
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.msg p {
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+} 
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+#hero-msg h1,
+main h2,
+.msg h2 {
+    font-family: var(--heading-font);
+}
+
+.mountains {
+    display: block;
+    margin: 40px 0;
 }
