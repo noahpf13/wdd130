@@ -618,3 +618,48 @@ h1, h2, h3, h4 {
     flex-wrap: wrap;
   }
 }
+
+/* Wrapper just to give spacing where it sits on the page */
+.profile-card {
+  margin: 2rem auto;
+}
+
+/* W3Schools Profile Card styles (scoped inside .profile-card) */
+.profile-card .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.profile-card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.profile-card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  margin: 0 4px;
+}
+
+.profile-card button:hover,
+.profile-card a:hover {
+  opacity: 0.7;
+}
+
